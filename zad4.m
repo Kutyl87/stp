@@ -3,7 +3,7 @@ format long;
  C = [Gz.Numerator{1}(2) Gz.Numerator{1}(3) Gz.Numerator{1}(4)];
  B = [1;0;0];
  z = sym('z');
- bieguny = [0.03,0.03,0.03];
+ bieguny = [0.144,0.144,0.144];
  K = [sym('k1') sym('k2') sym('k3')];
  M = z * eye(3) - (A-B*K);
  Mdet = det(M);
