@@ -7,7 +7,8 @@
 % B = [1;0];
 % C = [1,1];
 % D = 0;
-Lpor = acker(A',C',[0.03,0.03,0.03])'
+b_obsv = 0.01;
+Lpor = acker(A',C',[b_obsv,b_obsv,b_obsv])'
 % At = A-L*C;
 % Bt = [B,L];
 % Ct = [C;eye(2)];
@@ -17,12 +18,13 @@ Lpor = acker(A',C',[0.03,0.03,0.03])'
  % C = [Gz.Numerator{1}(2) Gz.Numerator{1}(3) Gz.Numerator{1}(4)];
  % B = [1;0;0];
  % s = sym('s');
- poz_zad = [0.03,0.03,0.03];
+ poz_zad = [b_obsv,b_obsv,b_obsv];
   l1 = sym('l1');
  l2 = sym('l2');
  l3 = sym('l3');
  L = [l1; l2;l3];
  z = sym('z');
+ L*C;
  M = z * eye(3) - (A-L*C);
  Mdet = det(M);
  s_eq = collect(Mdet,z);
@@ -38,4 +40,3 @@ Lpor = acker(A',C',[0.03,0.03,0.03])'
   % Kpor = acker(A,B,poz_zad)
   L = [double(lx.l1); double(lx.l2); double(lx.l3)]
  C;
- L(1)

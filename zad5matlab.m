@@ -44,5 +44,5 @@ ylabel("Wartość")
 hold off
 title("U")
 % legend("x1", "x2","x3","u")
-ylim([-2 3])
-print('zad5_-015.png','-dpng','-r400')
+% ylim([-2 3])
+print('zad5_03.png','-dpng','-r400')
