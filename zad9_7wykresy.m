@@ -63,4 +63,4 @@ hold off
 title("U")
 % legend("x1", "x2","x3","u")
 % ylim([-2 3])
-print('zad7_001.png','-dpng','-r400')
+print('zad9_7_08.png','-dpng','-r400')

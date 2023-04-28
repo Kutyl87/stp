@@ -1,4 +1,3 @@
-
 var_plot_1 = out.x_1_npr_8;
 data = var_plot_1.signals.values;
 time = var_plot_1.time;
@@ -57,4 +56,4 @@ hold off
 title("U")
 % legend("x1", "x2","x3","u")
 % ylim([-2 3])
-% print('zad9_8001.png','-dpng','-r400')
+print('zad9_8_055.png','-dpng','-r400')

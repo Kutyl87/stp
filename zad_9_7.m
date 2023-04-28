@@ -57,4 +57,4 @@ hold off
 title("U")
 % legend("x1", "x2","x3","u")
 % ylim([-2 3])
-% print('zad9_8001.png','-dpng','-r400')
+print('zad9_7_05.png','-dpng','-r400')

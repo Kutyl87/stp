@@ -7,7 +7,7 @@ A_21 = A_var_2(2:end,1);
 A_22 = A_var_2(2:end,2:end);
 B_1 = B_var_2(1,1);
 B_2 = B_var_2(2:end,1);
-b_obsv_np_rz = 0.8;
+b_obsv_np_rz = 0.55;
 L_np_rz = acker(A_22', A_12', [b_obsv_np_rz, b_obsv_np_rz])';
 L_np_rz;
 w_multiply = (A_22 - L_np_rz*A_12);
